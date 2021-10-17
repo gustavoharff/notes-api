@@ -1,0 +1,62 @@
+.svn
+.idea
+target
+logs
+out
+stacktrace.log
+
+*.class
+
+# default HSQL database files for production mode
+/prodDb.*
+
+# general HSQL database files
+*Db.properties
+*Db.script
+
+# project release file
+/*.war
+
+# plugin release files
+/*.zip
+
+# older plugin install locations
+/plugins
+/web-app/plugins
+
+# "temporary" build files
+/target
+
+hs_err_pid*
+.DS_Store
+
+*.iml
+
+## Directory-based project format:
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+.classpath
+.project
+.asscache
+.groovy
+.slcache
+
+web-app/files/i18n/extLocale_en_US.js
+web-app/files/i18n/extLocale_es.js
+web-app/files/i18n/extLocale_pt_BR.js
+
+notes.iml
+notes-grailsPlugins.iml
