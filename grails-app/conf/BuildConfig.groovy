@@ -29,7 +29,7 @@ grails.project.dependency.resolution = {
         // excludes 'ehcache'
     }
     log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
-    checksums true // Whether to verify checksums on resolve
+    checksums false // Whether to verify checksums on resolve
     legacyResolve false // whether to do a secondary resolve on plugin installation, not advised and here for backwards compatibility
 
     repositories {
@@ -39,7 +39,11 @@ grails.project.dependency.resolution = {
         grailsHome()
         mavenLocal()
         grailsCentral()
-        mavenCentral()
+//        mavenCentral()
+        mavenRepo "http://svn.insoft4.com.br:8082/maven/repo/"
+        mavenRepo "http://insecure.repo1.maven.org/maven2/"
+        mavenRepo "https://repo.grails.org/artifactory/plugins"
+        mavenRepo "https://repo.grails.org/grails/plugins/"
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
@@ -51,6 +55,9 @@ grails.project.dependency.resolution = {
         // runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0.2-grails-2.4"
+
+        compile('com.oracle:oracle:11.2.0.3')
+        compile('com.oracle:i18n:11.2.0.3')
 
         compile('com.auth0:java-jwt:3.11.0')
     }
