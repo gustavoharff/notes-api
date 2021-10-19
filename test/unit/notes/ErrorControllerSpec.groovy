@@ -1,5 +1,6 @@
 package notes
 
+import com.notes.ErrorController
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 

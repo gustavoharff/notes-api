@@ -60,6 +60,7 @@ grails.project.dependency.resolution = {
         compile('com.oracle:i18n:11.2.0.3')
 
         compile('com.auth0:java-jwt:3.11.0')
+        compile('org.mindrot:jbcrypt:0.4')
     }
 
     plugins {
